@@ -11,26 +11,26 @@
 </p>
 
 <p align="center">
-  <a href="https://github.com/agoralabs-sh/kibisis-api/releases/latest">
-    <img alt="GitHub release" src="https://img.shields.io/github/v/release/agoralabs-sh/kibisis-api?&logo=github">
+  <a href="https://github.com/kibis-is/api/releases/latest">
+    <img alt="GitHub release" src="https://img.shields.io/github/v/release/kibis-is/api?&logo=github">
   </a>
-  <a href="https://github.com/agoralabs-sh/kibisis-api/releases/latest">
-    <img alt="GitHub release date - published at" src="https://img.shields.io/github/release-date/agoralabs-sh/kibisis-api?logo=github">
-  </a>
-</p>
-
-<p align="center">
-  <a href="https://github.com/agoralabs-sh/kibisis-api/releases">
-    <img alt="GitHub Pre-release" src="https://img.shields.io/github/v/release/agoralabs-sh/kibisis-api?include_prereleases&label=pre-release&logo=github">
-  </a>
-  <a href="https://github.com/agoralabs-sh/kibisis-api/releases">
-    <img alt="GitHub Pre-release Date - Published At" src="https://img.shields.io/github/release-date-pre/agoralabs-sh/kibisis-api?label=pre-release date&logo=github">
+  <a href="https://github.com/kibis-is/api/releases/latest">
+    <img alt="GitHub release date - published at" src="https://img.shields.io/github/release-date/kibis-is/api?logo=github">
   </a>
 </p>
 
 <p align="center">
-  <a href="https://github.com/agoralabs-sh/kibisis-api/blob/main/COPYING">
-    <img alt="GitHub license" src="https://img.shields.io/github/license/agoralabs-sh/kibisis-api">
+  <a href="https://github.com/kibis-is/api/releases">
+    <img alt="GitHub Pre-release" src="https://img.shields.io/github/v/release/kibis-is/api?include_prereleases&label=pre-release&logo=github">
+  </a>
+  <a href="https://github.com/kibis-is/api/releases">
+    <img alt="GitHub Pre-release Date - Published At" src="https://img.shields.io/github/release-date-pre/kibis-is/api?label=pre-release date&logo=github">
+  </a>
+</p>
+
+<p align="center">
+  <a href="https://github.com/kibis-is/api/blob/main/COPYING">
+    <img alt="GitHub license" src="https://img.shields.io/github/license/kibis-is/api">
   </a>
 </p>
 
@@ -83,7 +83,7 @@ To start using your own Doppler config, go to the project on [Doppler](https://d
   <img alt="Screen grab of the Doppler dashboard when creating a branch config" src="assets/create_doppler_config.png" style="padding-top: 15px" height="512" />
 </p>
 
-> ⚠️ **NOTE:** Use your name in lowercase with hyphens instead of spaces (kebab-case).
+> ⚠️ **NOTE:** Use your name in lowercase with underscores instead of spaces (snake_case).
 
 <sup>[Back to top ^][table-of-contents]</sup>
 
@@ -91,15 +91,15 @@ To start using your own Doppler config, go to the project on [Doppler](https://d
 
 Once the branch project config has been setup, follow the instructions [here](https://docs.doppler.com/docs/install-cli#project-setup) to:
 * login to Doppler, and;
-* setup Doppler to use the `kibisis-api` project with your personal config.
+* setup Doppler to use the `api` project with your personal config.
 
-> ⚠️ **NOTE:** When naming your token, it is recommended you use: "<your_name>-<device_name>".
+> ⚠️ **NOTE:** When naming your token, it is recommended you use: "<name>-<device_name>".
 
 <sup>[Back to top ^][table-of-contents]</sup>
 
 ### 2.4. Setup `doctl`
 
-The DigitalOcean CLI client, `doctl`, is used to deploy the function to a remote environment that can be used to develop.
+The DigitalOcean CLI client, `doctl`, is used to deploy the function to a remote environment tha can be used to develop.
 
 Follow the instructions outlined in the [documentation][doctl].
 

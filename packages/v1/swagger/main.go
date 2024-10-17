@@ -19,7 +19,7 @@ var swaggerJSON string
 // @contact.email  support@agoralabs.sh
 
 // @license.name  GNU AGPLv3+
-// @license.url   https://github.com/agoralabs-sh/kibisis-api/blob/main/COPYING
+// @license.url   https://github.com/kibis-is/api/blob/main/COPYING
 func Main() *_types.Response {
 	return &_types.Response{
 		Body: swaggerJSON,
