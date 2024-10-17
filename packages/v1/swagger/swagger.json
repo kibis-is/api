@@ -9,7 +9,7 @@
         },
         "license": {
             "name": "GNU AGPLv3+",
-            "url": "https://github.com/agoralabs-sh/kibisis-api/blob/main/COPYING"
+            "url": "https://github.com/kibis-is/api/blob/main/COPYING"
         },
         "version": "1.0"
     },
