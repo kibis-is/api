@@ -34,25 +34,25 @@
   </a>
 </p>
 
-#### Table of contents
+#### Table Of Contents
 
 * [1. Overview](#-1-overview)
-  - [1.1. Project structure](#11-project-structure)
+  - [1.1. Project Structure](#11-project-structure)
 * [2. Development](#-2-development)
   - [2.1. Requirements](#21-requirements)
-  - [2.2. Create personal Doppler config](#22-create-personal-doppler-config)
+  - [2.2. Create Personal Doppler Config](#22-create-personal-doppler-config)
   - [2.3. Setup `doppler`](#23-setup-doppler)
   - [2.4. Setup `doctl`](#24-setup-doctl)
-  - [2.5. Create a personal namespace (optional)](#25-create-a-personal-namespace-optional)
-  - [2.6. Deploy the functions to the namespace](#26-deploy-the-functions-to-the-namespace)
+  - [2.5. Create A Personal Namespace (optional)](#25-create-a-personal-namespace-optional)
+  - [2.6. Deploy The Functions To The Namespace](#26-deploy-the-functions-to-the-namespace)
 * [3. Appendix](#-3-appendix)
-  - [3.1. Useful commands](#31-useful-commands)
+  - [3.1. Useful Commands](#31-useful-commands)
 * [4. How To Contribute](#-4-how-to-contribute)
 * [5. License](#-5-license)
 
 ## 🗂️ 1. Overview
 
-### 1.1. Project structure
+### 1.1. Project Structure
 
 The project structure is based on the DigitalOcean [functions](https://docs.digitalocean.com/products/functions/how-to/structure-projects) project structure.
 However, the core directories `lib` and `packages` have specific functionality:
@@ -75,9 +75,9 @@ However, the core directories `lib` and `packages` have specific functionality:
 
 <sup>[Back to top ^][table-of-contents]</sup>
 
-## 2.2. Create personal Doppler config
+## 2.2. Create Personal Doppler Config
 
-To start using your own Doppler config, go to the project on [Doppler](https://dashboard.doppler.com/workplace/ae8c01548486ba93b8fd/projects/kibisis-api) and press the "+" to create a new personal branch config in the "Development" config
+To start using your own Doppler config, go to the project on [Doppler](https://dashboard.doppler.com/workplace/ae8c01548486ba93b8fd/projects/api) and press the "+" to create a new personal branch config in the "Development" config
 
 <p align="center">
   <img alt="Screen grab of the Doppler dashboard when creating a branch config" src=".github/assets/create_doppler_config.png" style="padding-top: 15px" height="512" />
@@ -107,7 +107,7 @@ Follow the instructions outlined in the [documentation][doctl].
 
 <sup>[Back to top ^][table-of-contents]</sup>
 
-### 2.5. Create a personal namespace (optional)
+### 2.5. Create A Personal Namespace (optional)
 
 > ⚠️ **NOTE:** If you have a personal namespace already setup, you can skip this step.
 
@@ -121,7 +121,7 @@ doctl serverless namespaces create --label="kieran-namespace" --region="ams3"
 
 <sup>[Back to top ^][table-of-contents]</sup>
 
-### 2.6. Deploy the functions to the namespace
+### 2.6. Deploy The Functions To The Namespace
 
 1. Deploy the function to the namespace that was created in the [previous](#25-create-a-personal-namespace-optional) step:
 ```shell
@@ -145,7 +145,7 @@ Use this URL to interact with the API.
 
 ## 📑 3. Appendix
 
-### 3.1. Useful commands
+### 3.1. Useful Commands
 
 | Command        | Description                                                                                                                             |
 |----------------|-----------------------------------------------------------------------------------------------------------------------------------------|
