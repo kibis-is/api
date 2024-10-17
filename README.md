@@ -1,5 +1,5 @@
 <p align="center">
-  <img alt="3D pixelated Kibisis icon" src="assets/icon@128x128.png" style="padding-top: 15px" height="128" />
+  <img alt="3D pixelated Kibisis icon" src=".github/assets/logo@405x128.png" style="padding-top: 15px" height="128" />
 </p>
 
 <h1 align="center">
@@ -80,7 +80,7 @@ However, the core directories `lib` and `packages` have specific functionality:
 To start using your own Doppler config, go to the project on [Doppler](https://dashboard.doppler.com/workplace/ae8c01548486ba93b8fd/projects/kibisis-api) and press the "+" to create a new personal branch config in the "Development" config
 
 <p align="center">
-  <img alt="Screen grab of the Doppler dashboard when creating a branch config" src="assets/create_doppler_config.png" style="padding-top: 15px" height="512" />
+  <img alt="Screen grab of the Doppler dashboard when creating a branch config" src=".github/assets/create_doppler_config.png" style="padding-top: 15px" height="512" />
 </p>
 
 > ⚠️ **NOTE:** Use your name in lowercase with underscores instead of spaces (snake_case).
