@@ -4,11 +4,50 @@ on:
   pull_request:
 
 jobs:
-  test:
-    name: "Test"
+  ##
+  # install
+  ##
+
+  install:
+    name: "Install"
     runs-on: ubuntu-latest
+    environment: development
     steps:
       - name: "🛎 Checkout"
         uses: actions/checkout@v4
+      - name: "🔧 Setup"
+        uses: ./.github/actions/use-dependencies
+
+  ##
+  # validate pr title
+  ##
+
+  validate_pr_title:
+    name: "Validate PR Title"
+    needs: [install]
+    runs-on: ubuntu-latest
+    environment: development
+    steps:
+      - name: "🛎 Checkout"
+        uses: actions/checkout@v4
+      - name: "🔧 Setup"
+        uses: ./.github/actions/use-dependencies
+      - name: "✅ Validate"
+        run: echo ${{ github.event.pull_request.title }} | commitlint lint
+
+  ##
+  # test
+  ##
+
+  test:
+    name: "Test"
+    needs: [install, validate_pr_title]
+    runs-on: ubuntu-latest
+    environment: development
+    steps:
+      - name: "🛎 Checkout"
+        uses: actions/checkout@v4
+      - name: "🔧 Setup"
+        uses: ./.github/actions/use-dependencies
       - name: "🧪 Test"
         run: make test
